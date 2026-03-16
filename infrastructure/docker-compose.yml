@@ -13,7 +13,8 @@ services:
     ports:
       - "5432:5432" # Maps your physical port 5432 to the container's 5432
     volumes:
-      - postgres_data:/var/lib/postgresql/data # This saves your data even if you delete the container
+      - ./db/data:/var/lib/postgresql/data # This saves your data even if you delete the container
+      - ./db/init:/docker-entrypoint-initdb.d
 
   # This will be your Go Backend (We will build the Dockerfile for this later)
   # For now, it's just a placeholder to show you how they connect
