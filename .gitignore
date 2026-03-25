@@ -1,1 +1,14 @@
 infrastructure/db/data/
+
+backend/bin/
+backend/.env
+
+node_modules/
+apps/web-dashboard/node_modules/
+apps/mobile-app/node_modules/
+apps/mobile-app/.expo/
+dist/
+build/
+
+.DS_Store
+Thumbs.db
